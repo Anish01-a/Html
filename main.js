@@ -1,7 +1,7 @@
 const nameError= document.querySelector("#nameError");
 const phoneError= document.querySelector("#phoneError");
 const emailError= document.querySelector("#emailError");
-const submitError= document.querySelector(".submitError");
+const submitError= document.querySelector(".submiterror");
 const emailConfirm = document.querySelector("#emailConfirm");
 
 function nameValidation() 
@@ -77,7 +77,7 @@ function emailConfirm()
 		emailConfirm.classList.remove("fa-check-circle");
 		return false;
 	}
-	if(!emailCon.value == email.value) {
+	if(emailCon != email) {
 		emailConfirm.innerHTML = "Re-check your email.";
 		emailConfirm.classList.add("fa-close");
 		emailConfirm.classList.remove("fa-check-circle");
