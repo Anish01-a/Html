@@ -91,7 +91,7 @@ function emailCheck()
 
 function formValidate() {
 
-	if(!nameValidation() || !phoneValidation() || !emailValidation() || emailCheck()) {
+	if(!nameValidation() || !phoneValidation() || !emailValidation() || !emailCheck()) {
 		submitError.innerHTML = "Please check your errors!!!";
 		submitError.classList.add("slide-in");
 		setTimeout(()=>{
